@@ -95,7 +95,11 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func resumeRecording(sender: UIButton) {
-        println("resuming the recording")
+        resumeButton.hidden = true
+        stopButton.hidden = false
+        pauseButton.hidden = false
+        recordingLabel.text = "Recording in Progress"
+        audioRecorder.record()
     }
 }
 
