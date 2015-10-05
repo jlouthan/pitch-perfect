@@ -20,7 +20,6 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +36,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         recordButton.enabled = false;
         stopButton.hidden = false
         recordingInProgress.hidden = false
-        //TODO: Record the user's voice
+        
         let dirPath = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as! String
         var recordingName = "my_audio.wav"
         var pathArray = [dirPath, recordingName]
@@ -65,9 +64,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
 
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
         if(flag){
-            recordedAudio = RecordedAudio()
-            recordedAudio.filePathUrl = recorder.url
-            recordedAudio.title = recorder.url.lastPathComponent
+            recordedAudio = RecordedAudio(filePathUrl: recorder.url, title: recorder.url.lastPathComponent!)
         
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
         }else{

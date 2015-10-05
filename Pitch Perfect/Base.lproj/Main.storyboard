@@ -178,16 +178,16 @@
                                 <exclude reference="0ke-7O-V8e"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="ScR-QN-Cnb"/>
-                                <exclude reference="dew-3w-tNg"/>
-                                <exclude reference="TU0-cT-FFI"/>
-                                <exclude reference="d8x-o2-L5H"/>
-                                <exclude reference="FST-6h-p8I"/>
-                                <exclude reference="eWX-Nd-Son"/>
+                                <exclude reference="Pm3-jw-yf5"/>
                                 <exclude reference="1lP-9M-qkM"/>
                                 <exclude reference="8Sa-2D-328"/>
                                 <exclude reference="oYW-Hy-d6C"/>
-                                <exclude reference="Pm3-jw-yf5"/>
+                                <exclude reference="TU0-cT-FFI"/>
+                                <exclude reference="d8x-o2-L5H"/>
+                                <exclude reference="ScR-QN-Cnb"/>
+                                <exclude reference="dew-3w-tNg"/>
+                                <exclude reference="FST-6h-p8I"/>
+                                <exclude reference="eWX-Nd-Son"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -199,16 +199,16 @@
                                 <include reference="0ke-7O-V8e"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="ScR-QN-Cnb"/>
-                                <include reference="dew-3w-tNg"/>
-                                <include reference="TU0-cT-FFI"/>
-                                <include reference="d8x-o2-L5H"/>
-                                <include reference="FST-6h-p8I"/>
-                                <include reference="eWX-Nd-Son"/>
+                                <include reference="Pm3-jw-yf5"/>
                                 <include reference="1lP-9M-qkM"/>
                                 <include reference="8Sa-2D-328"/>
                                 <include reference="oYW-Hy-d6C"/>
-                                <include reference="Pm3-jw-yf5"/>
+                                <include reference="TU0-cT-FFI"/>
+                                <include reference="d8x-o2-L5H"/>
+                                <include reference="ScR-QN-Cnb"/>
+                                <include reference="dew-3w-tNg"/>
+                                <include reference="FST-6h-p8I"/>
+                                <include reference="eWX-Nd-Son"/>
                             </mask>
                         </variation>
                     </view>
