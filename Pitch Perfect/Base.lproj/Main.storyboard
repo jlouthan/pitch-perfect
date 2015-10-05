@@ -230,6 +230,12 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZU-Jc-6QK">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Echo Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -239,10 +245,12 @@
                             <constraint firstItem="4U0-vI-KtI" firstAttribute="top" secondItem="0qb-HN-JZs" secondAttribute="bottom" constant="50" id="Pm3-jw-yf5"/>
                             <constraint firstItem="jnr-ig-z55" firstAttribute="top" secondItem="Ufv-9J-LTY" secondAttribute="bottom" constant="50" id="ScR-QN-Cnb"/>
                             <constraint firstItem="B9U-Z0-W3s" firstAttribute="top" secondItem="jnr-ig-z55" secondAttribute="bottom" constant="30" id="TU0-cT-FFI"/>
+                            <constraint firstItem="XZU-Jc-6QK" firstAttribute="top" secondItem="B9U-Z0-W3s" secondAttribute="bottom" constant="30" id="VS7-je-Jb4"/>
                             <constraint firstItem="B9U-Z0-W3s" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="50" id="d8x-o2-L5H"/>
                             <constraint firstItem="jnr-ig-z55" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="50" id="dew-3w-tNg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="z2x-BT-2fl" secondAttribute="trailing" constant="50" id="eWX-Nd-Son"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oUK-df-x60" secondAttribute="trailing" constant="50" id="foi-PX-z6G"/>
+                            <constraint firstItem="XZU-Jc-6QK" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="50" id="j1A-qv-UBY"/>
                             <constraint firstAttribute="centerX" secondItem="0qb-HN-JZs" secondAttribute="centerX" constant="-2" id="oYW-Hy-d6C"/>
                             <constraint firstItem="oUK-df-x60" firstAttribute="top" secondItem="0ke-7O-V8e" secondAttribute="bottom" constant="30" id="oiB-cH-lbC"/>
                         </constraints>
@@ -254,6 +262,7 @@
                                 <exclude reference="B9U-Z0-W3s"/>
                                 <exclude reference="0ke-7O-V8e"/>
                                 <exclude reference="oUK-df-x60"/>
+                                <exclude reference="XZU-Jc-6QK"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="ScR-QN-Cnb"/>
@@ -264,6 +273,8 @@
                                 <exclude reference="eWX-Nd-Son"/>
                                 <exclude reference="1lP-9M-qkM"/>
                                 <exclude reference="8Sa-2D-328"/>
+                                <exclude reference="VS7-je-Jb4"/>
+                                <exclude reference="j1A-qv-UBY"/>
                                 <exclude reference="foi-PX-z6G"/>
                                 <exclude reference="oiB-cH-lbC"/>
                                 <exclude reference="oYW-Hy-d6C"/>
@@ -278,6 +289,7 @@
                                 <include reference="B9U-Z0-W3s"/>
                                 <include reference="0ke-7O-V8e"/>
                                 <include reference="oUK-df-x60"/>
+                                <include reference="XZU-Jc-6QK"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="ScR-QN-Cnb"/>
@@ -288,6 +300,8 @@
                                 <include reference="eWX-Nd-Son"/>
                                 <include reference="1lP-9M-qkM"/>
                                 <include reference="8Sa-2D-328"/>
+                                <include reference="VS7-je-Jb4"/>
+                                <include reference="j1A-qv-UBY"/>
                                 <include reference="foi-PX-z6G"/>
                                 <include reference="oiB-cH-lbC"/>
                                 <include reference="oYW-Hy-d6C"/>
@@ -322,6 +336,7 @@
     <resources>
         <image name="Chipmunk Button" width="80" height="80"/>
         <image name="Darth Vader Button" width="80" height="80"/>
+        <image name="Echo Button" width="80" height="80"/>
         <image name="Fast Button" width="80" height="80"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Pause Button" width="50" height="50"/>
