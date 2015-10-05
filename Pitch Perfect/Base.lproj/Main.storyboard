@@ -136,6 +136,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Record" id="FIl-Fa-kUw"/>
                     <connections>
+                        <outlet property="pauseButton" destination="utt-Nu-gBJ" id="cBp-nD-bg1"/>
                         <outlet property="recordButton" destination="BTn-Yr-Syi" id="ItB-AR-A6h"/>
                         <outlet property="recordingLabel" destination="6jg-nt-aiY" id="Dfz-bj-hU7"/>
                         <outlet property="stopButton" destination="NHO-wC-2bU" id="2N9-Br-fAe"/>
