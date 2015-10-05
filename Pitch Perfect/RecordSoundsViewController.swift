@@ -15,6 +15,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var pauseButton: UIButton!
+    @IBOutlet weak var resumeButton: UIButton!
     
     var audioRecorder:AVAudioRecorder!
     var recordedAudio:RecordedAudio!
@@ -30,7 +31,8 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     
     override func viewWillAppear(animated: Bool) {
         stopButton.hidden = true
-        pauseButton.hidden = true;
+        pauseButton.hidden = true
+        resumeButton.hidden = true
         recordButton.enabled = true
         recordingLabel.text = "Tap to Record"
     }
@@ -82,6 +84,18 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
         audioRecorder.stop()
         var audioSession = AVAudioSession.sharedInstance()
         audioSession.setActive(false, error: nil)
+    }
+    
+    @IBAction func pauseRecording(sender: UIButton) {
+        audioRecorder.pause()
+        stopButton.hidden = true
+        pauseButton.hidden = true
+        recordingLabel.text = "Press Play to Resume"
+        resumeButton.hidden = false
+    }
+    
+    @IBAction func resumeRecording(sender: UIButton) {
+        println("resuming the recording")
     }
 }
 
