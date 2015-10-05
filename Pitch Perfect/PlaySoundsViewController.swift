@@ -90,7 +90,8 @@ class PlaySoundsViewController: UIViewController {
         audioEngine.attachNode(audioPlayerNode)
         
         var reverbEffect = AVAudioUnitReverb()
-//        reverbEffect.loadFactoryPreset(AVAudioUnitReverbPreset(rawValue: 0)!)
+        reverbEffect.loadFactoryPreset(AVAudioUnitReverbPreset.Cathedral)
+        reverbEffect.wetDryMix = 60
         audioEngine.attachNode(reverbEffect)
         
         audioEngine.connect(audioPlayerNode, to: reverbEffect, format: nil)
