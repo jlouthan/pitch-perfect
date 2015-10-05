@@ -33,56 +33,104 @@
                                 <color key="textColor" red="0.14509803921568629" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-wC-2bU">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" image="Stop Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8pv-0Q-rxZ"/>
-                                </connections>
-                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCU-7Y-GW4">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utt-Nu-gBJ">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="Pause Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHO-wC-2bU">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <state key="normal" image="Stop Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8pv-0Q-rxZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="utt-Nu-gBJ" secondAttribute="centerY" id="1gq-Fd-2Kz"/>
+                                    <constraint firstAttribute="centerY" secondItem="NHO-wC-2bU" secondAttribute="centerY" id="HBY-Ru-lSH"/>
+                                    <constraint firstAttribute="width" constant="200" id="RZZ-Im-jiN">
+                                        <variation key="widthClass=compact" constant="141"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="50" id="Xu1-xb-fYS">
+                                        <variation key="widthClass=compact" constant="50"/>
+                                    </constraint>
+                                    <constraint firstAttribute="trailing" secondItem="NHO-wC-2bU" secondAttribute="trailing" constant="8" id="yT0-FZ-rjx"/>
+                                    <constraint firstItem="NHO-wC-2bU" firstAttribute="leading" secondItem="utt-Nu-gBJ" secondAttribute="trailing" constant="25" id="ze4-aZ-0yZ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="utt-Nu-gBJ"/>
+                                        <exclude reference="NHO-wC-2bU"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="RZZ-Im-jiN"/>
+                                        <exclude reference="Xu1-xb-fYS"/>
+                                        <exclude reference="1gq-Fd-2Kz"/>
+                                        <exclude reference="HBY-Ru-lSH"/>
+                                        <exclude reference="yT0-FZ-rjx"/>
+                                        <exclude reference="ze4-aZ-0yZ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="utt-Nu-gBJ"/>
+                                        <include reference="NHO-wC-2bU"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="RZZ-Im-jiN"/>
+                                        <include reference="Xu1-xb-fYS"/>
+                                        <include reference="1gq-Fd-2Kz"/>
+                                        <include reference="HBY-Ru-lSH"/>
+                                        <include reference="yT0-FZ-rjx"/>
+                                        <include reference="ze4-aZ-0yZ"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="6jg-nt-aiY" secondAttribute="centerX" constant="-0.5" id="2er-t2-5Wp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="uCU-7Y-GW4" secondAttribute="bottom" constant="31" id="Cph-u3-yqh"/>
                             <constraint firstAttribute="centerY" secondItem="BTn-Yr-Syi" secondAttribute="centerY" id="La3-2w-4Af"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="NHO-wC-2bU" secondAttribute="bottom" constant="31" id="Oyg-pT-QuG"/>
-                            <constraint firstAttribute="centerX" secondItem="NHO-wC-2bU" secondAttribute="centerX" constant="-2" id="ZaQ-4D-hzk"/>
                             <constraint firstAttribute="centerX" secondItem="BTn-Yr-Syi" secondAttribute="centerX" id="ewd-zI-Hwh"/>
                             <constraint firstItem="6jg-nt-aiY" firstAttribute="top" secondItem="BTn-Yr-Syi" secondAttribute="bottom" constant="8" id="fbr-T6-kJK"/>
-                            <constraint firstItem="NHO-wC-2bU" firstAttribute="top" secondItem="BTn-Yr-Syi" secondAttribute="bottom" constant="169" id="mkG-OE-T79"/>
+                            <constraint firstAttribute="centerX" secondItem="uCU-7Y-GW4" secondAttribute="centerX" id="nXT-SK-twH"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="BTn-Yr-Syi"/>
                                 <exclude reference="6jg-nt-aiY"/>
-                                <exclude reference="NHO-wC-2bU"/>
+                                <exclude reference="uCU-7Y-GW4"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Oyg-pT-QuG"/>
-                                <exclude reference="2er-t2-5Wp"/>
-                                <exclude reference="fbr-T6-kJK"/>
                                 <exclude reference="La3-2w-4Af"/>
                                 <exclude reference="ewd-zI-Hwh"/>
-                                <exclude reference="ZaQ-4D-hzk"/>
-                                <exclude reference="mkG-OE-T79"/>
+                                <exclude reference="2er-t2-5Wp"/>
+                                <exclude reference="fbr-T6-kJK"/>
+                                <exclude reference="nXT-SK-twH"/>
+                                <exclude reference="Cph-u3-yqh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="BTn-Yr-Syi"/>
                                 <include reference="6jg-nt-aiY"/>
-                                <include reference="NHO-wC-2bU"/>
+                                <include reference="uCU-7Y-GW4"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Oyg-pT-QuG"/>
-                                <include reference="2er-t2-5Wp"/>
-                                <include reference="fbr-T6-kJK"/>
                                 <include reference="La3-2w-4Af"/>
                                 <include reference="ewd-zI-Hwh"/>
-                                <include reference="ZaQ-4D-hzk"/>
-                                <exclude reference="mkG-OE-T79"/>
+                                <include reference="2er-t2-5Wp"/>
+                                <include reference="fbr-T6-kJK"/>
+                                <include reference="nXT-SK-twH"/>
+                                <include reference="Cph-u3-yqh"/>
                             </mask>
                         </variation>
                     </view>
@@ -241,6 +289,7 @@
         <image name="Darth Vader Button" width="100" height="100"/>
         <image name="Fast Button" width="100" height="100"/>
         <image name="Microphone" width="100" height="100"/>
+        <image name="Pause Button" width="50" height="50"/>
         <image name="Slow Button" width="100" height="100"/>
         <image name="Stop Button" width="50" height="50"/>
     </resources>
