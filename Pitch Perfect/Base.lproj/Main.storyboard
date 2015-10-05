@@ -27,9 +27,9 @@
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2Je-kU-bTu"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="recording" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jg-nt-aiY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6jg-nt-aiY">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="14"/>
                                 <color key="textColor" red="0.14509803921568629" green="0.28235294117647058" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -89,7 +89,7 @@
                     <navigationItem key="navigationItem" title="Record" id="FIl-Fa-kUw"/>
                     <connections>
                         <outlet property="recordButton" destination="BTn-Yr-Syi" id="ItB-AR-A6h"/>
-                        <outlet property="recordingInProgress" destination="6jg-nt-aiY" id="CQL-bw-i9x"/>
+                        <outlet property="recordingLabel" destination="6jg-nt-aiY" id="Dfz-bj-hU7"/>
                         <outlet property="stopButton" destination="NHO-wC-2bU" id="2N9-Br-fAe"/>
                         <segue destination="fHN-CB-CfJ" kind="show" identifier="stopRecording" id="x9g-ru-ZfU"/>
                     </connections>
