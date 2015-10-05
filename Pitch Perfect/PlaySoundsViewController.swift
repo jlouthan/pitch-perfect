@@ -84,10 +84,26 @@ class PlaySoundsViewController: UIViewController {
     
     
     @IBAction func playReverbAudio(sender: UIButton) {
+        stopAudio()
+        
+        var audioPlayerNode = AVAudioPlayerNode()
+        audioEngine.attachNode(audioPlayerNode)
+        
+        var reverbEffect = AVAudioUnitReverb()
+//        reverbEffect.loadFactoryPreset(AVAudioUnitReverbPreset(rawValue: 0)!)
+        audioEngine.attachNode(reverbEffect)
+        
+        audioEngine.connect(audioPlayerNode, to: reverbEffect, format: nil)
+        audioEngine.connect(reverbEffect, to: audioEngine.outputNode, format: nil)
+        
+        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+        
+        audioEngine.startAndReturnError(nil)
+        audioPlayerNode.play()
     }
     
     @IBAction func stopAudio(sender: UIButton) {
-        audioPlayer.stop()
+        stopAudio()
     }
     /*
     // MARK: - Navigation
