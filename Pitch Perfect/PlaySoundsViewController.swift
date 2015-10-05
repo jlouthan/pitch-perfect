@@ -79,6 +79,13 @@ class PlaySoundsViewController: UIViewController {
         playAudioWithVariablePitch(-1000)
     }
     
+    @IBAction func playEchoAudio(sender: UIButton) {
+    }
+    
+    
+    @IBAction func playReverbAudio(sender: UIButton) {
+    }
+    
     @IBAction func stopAudio(sender: UIButton) {
         audioPlayer.stop()
     }
