@@ -246,17 +246,17 @@
                         <color key="backgroundColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="0ke-7O-V8e" firstAttribute="top" secondItem="z2x-BT-2fl" secondAttribute="bottom" constant="30" id="1lP-9M-qkM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0ke-7O-V8e" secondAttribute="trailing" constant="50" id="8Sa-2D-328"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ke-7O-V8e" secondAttribute="trailing" constant="40" id="8Sa-2D-328"/>
                             <constraint firstItem="z2x-BT-2fl" firstAttribute="top" secondItem="Ufv-9J-LTY" secondAttribute="bottom" constant="50" id="FST-6h-p8I"/>
                             <constraint firstItem="4U0-vI-KtI" firstAttribute="top" secondItem="0qb-HN-JZs" secondAttribute="bottom" constant="50" id="Pm3-jw-yf5"/>
                             <constraint firstItem="jnr-ig-z55" firstAttribute="top" secondItem="Ufv-9J-LTY" secondAttribute="bottom" constant="50" id="ScR-QN-Cnb"/>
                             <constraint firstItem="B9U-Z0-W3s" firstAttribute="top" secondItem="jnr-ig-z55" secondAttribute="bottom" constant="30" id="TU0-cT-FFI"/>
                             <constraint firstItem="XZU-Jc-6QK" firstAttribute="top" secondItem="B9U-Z0-W3s" secondAttribute="bottom" constant="30" id="VS7-je-Jb4"/>
-                            <constraint firstItem="B9U-Z0-W3s" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="50" id="d8x-o2-L5H"/>
-                            <constraint firstItem="jnr-ig-z55" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="50" id="dew-3w-tNg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="z2x-BT-2fl" secondAttribute="trailing" constant="50" id="eWX-Nd-Son"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oUK-df-x60" secondAttribute="trailing" constant="50" id="foi-PX-z6G"/>
-                            <constraint firstItem="XZU-Jc-6QK" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="50" id="j1A-qv-UBY"/>
+                            <constraint firstItem="B9U-Z0-W3s" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="40" id="d8x-o2-L5H"/>
+                            <constraint firstItem="jnr-ig-z55" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="40" id="dew-3w-tNg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z2x-BT-2fl" secondAttribute="trailing" constant="40" id="eWX-Nd-Son"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oUK-df-x60" secondAttribute="trailing" constant="40" id="foi-PX-z6G"/>
+                            <constraint firstItem="XZU-Jc-6QK" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="40" id="j1A-qv-UBY"/>
                             <constraint firstAttribute="centerX" secondItem="0qb-HN-JZs" secondAttribute="centerX" constant="-2" id="oYW-Hy-d6C"/>
                             <constraint firstItem="oUK-df-x60" firstAttribute="top" secondItem="0ke-7O-V8e" secondAttribute="bottom" constant="30" id="oiB-cH-lbC"/>
                         </constraints>
