@@ -80,6 +80,22 @@ class PlaySoundsViewController: UIViewController {
     }
     
     @IBAction func playEchoAudio(sender: UIButton) {
+        stopAudio()
+        
+        var audioPlayerNode = AVAudioPlayerNode()
+        audioEngine.attachNode(audioPlayerNode)
+        
+        var echoEffect = AVAudioUnitDelay()
+        echoEffect.delayTime = NSTimeInterval(0.5)
+        audioEngine.attachNode(echoEffect)
+        
+        audioEngine.connect(audioPlayerNode, to: echoEffect, format: nil)
+        audioEngine.connect(echoEffect, to: audioEngine.outputNode, format: nil)
+        
+        audioPlayerNode.scheduleFile(audioFile, atTime: nil, completionHandler: nil)
+        
+        audioEngine.startAndReturnError(nil)
+        audioPlayerNode.play()
     }
     
     
