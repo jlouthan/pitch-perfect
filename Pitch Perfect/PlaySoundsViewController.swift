@@ -31,17 +31,21 @@ class PlaySoundsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    func playAudioAtRate(rate: Float) {
+    func stopAudio() {
         audioPlayer.stop()
+        audioEngine.stop()
+        audioEngine.reset()
+    }
+    
+    func playAudioAtRate(rate: Float) {
+        stopAudio()
         audioPlayer.rate = rate
         audioPlayer.currentTime = 0.0
         audioPlayer.play()
     }
     
     func playAudioWithVariablePitch(pitch: Float){
-        audioPlayer.stop()
-        audioEngine.stop()
-        audioEngine.reset()
+        stopAudio()
         
         var audioPlayerNode = AVAudioPlayerNode()
         audioEngine.attachNode(audioPlayerNode)
