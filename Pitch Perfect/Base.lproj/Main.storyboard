@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="v0F-Dq-oIa">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -225,19 +224,27 @@
                                     <action selector="playDarthVaderAudio:" destination="fHN-CB-CfJ" eventType="touchUpInside" id="X52-yC-q4g"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUK-df-x60">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Reverb Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0ke-7O-V8e" firstAttribute="top" secondItem="z2x-BT-2fl" secondAttribute="bottom" constant="50" id="1lP-9M-qkM"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0ke-7O-V8e" secondAttribute="trailing" constant="15" id="8Sa-2D-328"/>
+                            <constraint firstItem="0ke-7O-V8e" firstAttribute="top" secondItem="z2x-BT-2fl" secondAttribute="bottom" constant="30" id="1lP-9M-qkM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0ke-7O-V8e" secondAttribute="trailing" constant="50" id="8Sa-2D-328"/>
                             <constraint firstItem="z2x-BT-2fl" firstAttribute="top" secondItem="Ufv-9J-LTY" secondAttribute="bottom" constant="50" id="FST-6h-p8I"/>
                             <constraint firstItem="4U0-vI-KtI" firstAttribute="top" secondItem="0qb-HN-JZs" secondAttribute="bottom" constant="50" id="Pm3-jw-yf5"/>
                             <constraint firstItem="jnr-ig-z55" firstAttribute="top" secondItem="Ufv-9J-LTY" secondAttribute="bottom" constant="50" id="ScR-QN-Cnb"/>
-                            <constraint firstItem="B9U-Z0-W3s" firstAttribute="top" secondItem="jnr-ig-z55" secondAttribute="bottom" constant="50" id="TU0-cT-FFI"/>
-                            <constraint firstItem="B9U-Z0-W3s" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="15" id="d8x-o2-L5H"/>
-                            <constraint firstItem="jnr-ig-z55" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="15" id="dew-3w-tNg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="z2x-BT-2fl" secondAttribute="trailing" constant="15" id="eWX-Nd-Son"/>
+                            <constraint firstItem="B9U-Z0-W3s" firstAttribute="top" secondItem="jnr-ig-z55" secondAttribute="bottom" constant="30" id="TU0-cT-FFI"/>
+                            <constraint firstItem="B9U-Z0-W3s" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="50" id="d8x-o2-L5H"/>
+                            <constraint firstItem="jnr-ig-z55" firstAttribute="leading" secondItem="YOG-P0-1pC" secondAttribute="leadingMargin" constant="50" id="dew-3w-tNg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z2x-BT-2fl" secondAttribute="trailing" constant="50" id="eWX-Nd-Son"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oUK-df-x60" secondAttribute="trailing" constant="50" id="foi-PX-z6G"/>
                             <constraint firstAttribute="centerX" secondItem="0qb-HN-JZs" secondAttribute="centerX" constant="-2" id="oYW-Hy-d6C"/>
+                            <constraint firstItem="oUK-df-x60" firstAttribute="top" secondItem="0ke-7O-V8e" secondAttribute="bottom" constant="30" id="oiB-cH-lbC"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -246,18 +253,21 @@
                                 <exclude reference="0qb-HN-JZs"/>
                                 <exclude reference="B9U-Z0-W3s"/>
                                 <exclude reference="0ke-7O-V8e"/>
+                                <exclude reference="oUK-df-x60"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Pm3-jw-yf5"/>
-                                <exclude reference="1lP-9M-qkM"/>
-                                <exclude reference="8Sa-2D-328"/>
-                                <exclude reference="oYW-Hy-d6C"/>
-                                <exclude reference="TU0-cT-FFI"/>
-                                <exclude reference="d8x-o2-L5H"/>
                                 <exclude reference="ScR-QN-Cnb"/>
                                 <exclude reference="dew-3w-tNg"/>
+                                <exclude reference="TU0-cT-FFI"/>
+                                <exclude reference="d8x-o2-L5H"/>
                                 <exclude reference="FST-6h-p8I"/>
                                 <exclude reference="eWX-Nd-Son"/>
+                                <exclude reference="1lP-9M-qkM"/>
+                                <exclude reference="8Sa-2D-328"/>
+                                <exclude reference="foi-PX-z6G"/>
+                                <exclude reference="oiB-cH-lbC"/>
+                                <exclude reference="oYW-Hy-d6C"/>
+                                <exclude reference="Pm3-jw-yf5"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -267,18 +277,21 @@
                                 <include reference="0qb-HN-JZs"/>
                                 <include reference="B9U-Z0-W3s"/>
                                 <include reference="0ke-7O-V8e"/>
+                                <include reference="oUK-df-x60"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Pm3-jw-yf5"/>
-                                <include reference="1lP-9M-qkM"/>
-                                <include reference="8Sa-2D-328"/>
-                                <include reference="oYW-Hy-d6C"/>
-                                <include reference="TU0-cT-FFI"/>
-                                <include reference="d8x-o2-L5H"/>
                                 <include reference="ScR-QN-Cnb"/>
                                 <include reference="dew-3w-tNg"/>
+                                <include reference="TU0-cT-FFI"/>
+                                <include reference="d8x-o2-L5H"/>
                                 <include reference="FST-6h-p8I"/>
                                 <include reference="eWX-Nd-Son"/>
+                                <include reference="1lP-9M-qkM"/>
+                                <include reference="8Sa-2D-328"/>
+                                <include reference="foi-PX-z6G"/>
+                                <include reference="oiB-cH-lbC"/>
+                                <include reference="oYW-Hy-d6C"/>
+                                <include reference="Pm3-jw-yf5"/>
                             </mask>
                         </variation>
                     </view>
@@ -307,13 +320,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Chipmunk Button" width="100" height="100"/>
-        <image name="Darth Vader Button" width="100" height="100"/>
-        <image name="Fast Button" width="100" height="100"/>
+        <image name="Chipmunk Button" width="80" height="80"/>
+        <image name="Darth Vader Button" width="80" height="80"/>
+        <image name="Fast Button" width="80" height="80"/>
         <image name="Microphone" width="100" height="100"/>
         <image name="Pause Button" width="50" height="50"/>
         <image name="Resume Button" width="50" height="50"/>
-        <image name="Slow Button" width="100" height="100"/>
+        <image name="Reverb Button" width="80" height="80"/>
+        <image name="Slow Button" width="80" height="80"/>
         <image name="Stop Button" width="50" height="50"/>
     </resources>
 </document>
